@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fix {
+    display: flex;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    ;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    padding-block: 5px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .small-box {
+    width: 35%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.container .small-box h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-block: 10px;
+}
+
+.container .small-box .child,
+.child2,
+.child3,
+.child4 {
+    padding: 8px 30px;
+}
+
+.container .small-box .child input {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.container .small-box .child4 input {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    transition: 0.2s linear;
+    outline: none;
+    border: none;
+    background-color:green;
+    margin-block: 6px;
+}
+
+.container .small-box .child4 input:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* media-query */
+
+@media screen and (max-width:1050px) {
+ .container .small-box{
+    width:50%;
+ }
+}
+
+@media screen and (max-width:760px) {
+    .container .small-box{
+        width:65%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .container .small-box{
+        width:80%;
+    }
+}
+@media screen and (max-width:760px) {
+    .container .small-box{
+        width:95%;
+    }
+}
